@@ -1,0 +1,178 @@
+/* Указываем box sizing */
+
+html {
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+button.js-buy * {
+    pointer-events: none;
+}
+
+button[disabled] {
+    cursor: default;
+}
+
+
+/* ul[class],
+ol[class] {
+    padding: 0;
+} */
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+article>*+* {
+    margin-top: 1em;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 1620px;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-Regular.eot');
+    src: local('☺'), url('../fonts/CeraPro-Regular.woff') format('woff'), url('../fonts/CeraPro-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-Medium.eot');
+    src: local('☺'), url('../fonts/CeraPro-Medium.woff') format('woff'), url('../fonts/CeraPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-Bold.eot');
+    src: local('☺'), url('../fonts/CeraPro-Bold.woff') format('woff'), url('../fonts/CeraPro-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@media(max-width: 1920px) {
+    .container {
+        width: 1620px;
+    }
+}
+
+@media(max-width: 1750px) {
+    .container {
+        width: 1590px;
+    }
+}
+
+@media(max-width: 1650px) {
+    .container {
+        width: 1550px;
+    }
+}
+
+@media(max-width: 1600px) {
+    .container {
+        width: 1460px;
+    }
+}
+
+@media(max-width: 1560px) {
+    .container {
+        width: 1360px;
+    }
+}
+
+@media(max-width: 1460px) {
+    .container {
+        width: 1260px;
+    }
+}
+
+@media(max-width: 1360px) {
+    .container {
+        width: 1160px;
+    }
+}
+
+@media(max-width: 1260px) {
+    .container {
+        width: 1060px;
+    }
+}
+
+@media(max-width: 1160px) {
+    .container {
+        width: 960px;
+    }
+}
+
+@media(max-width: 992px) {
+    .container {
+        width: 100%;
+    }
+}
